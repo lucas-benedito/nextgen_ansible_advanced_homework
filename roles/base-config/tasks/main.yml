@@ -9,6 +9,8 @@
     backup: yes
 
 - name: enable repos
- 
-- name: install base tools and packages
+  copy:
+      src: internal.repo
+      dest: /etc/yum.repos.d/open_three-tier-app.repo
 
+# - name: install base tools and packages
